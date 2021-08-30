@@ -1,18 +1,15 @@
 
+// 首頁精心課程
 @media (max-width: 992px) {
   .swiper-slide  {
     width: 48% !important;
-    margin: 0.5rem 1%;
   }
 }
 
 .swiper {
   width: 100%;
   height: 100%;
-  flex-wrap: nowrap !important;
-  @media (max-width: 992px) {
-    flex-wrap: wrap !important;
-  }
+  flex-wrap: nowrap !important;  
 }
 
 
@@ -23,5 +20,12 @@
   object-fit: cover;
 }
 
+// 預約課程階級選擇
+@media (max-width: 768px) {
+
+  .courselevelslide{
+    width: 100% !important;
+  }
+}
 
 
