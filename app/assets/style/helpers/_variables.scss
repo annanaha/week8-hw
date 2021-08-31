@@ -264,10 +264,13 @@ $spacers: (
   10: $spacer * 2, //32
   11: $spacer * 2.25, //36
   12: $spacer * 2.5, //40
-  13: $spacer * 3, //48
-  14: $spacer * 3.75, //60
-  15: $spacer * 4, //64
-  16: $spacer * 5, //80
+  13: $spacer * 2.75, //44
+  14: $spacer * 3, //48
+  15: $spacer * 3.25, //52
+  16: $spacer * 3.5, //56
+  17: $spacer * 3.75, //60
+  18: $spacer * 4, //64
+  19: $spacer * 5, //80
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -418,7 +421,9 @@ $aspect-ratios: (
   "1x1": 100%,
   "4x3": calc(3 / 4 * 100%),
   "16x9": calc(9 / 16 * 100%),
-  "21x9": calc(9 / 21 * 100%)
+  "21x9": calc(9 / 21 * 100%),
+  "2x1": calc(1 / 2 * 100%),//new
+  "3x2": calc(2 / 3 * 100%)//new
 ) !default;
 // scss-docs-end aspect-ratios
 // stylelint-enable function-disallowed-list

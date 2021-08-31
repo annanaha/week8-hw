@@ -1,0 +1,354 @@
+---
+title: 課程介紹
+layout: ./app/layout.ejs
+engine: ejs
+current: course.html
+---
+
+<main>
+    <section class="py-13">
+        <div class="container">
+            <h2 class="text-secondary fs-3 text-center mb-10">課程介紹</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-2 mb-md-0">
+                    <div class="ratio ratio-4x3 ">
+                        <img class="border-radius-lg"
+                            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1540206276207-3af25c08abc4.jpeg?raw=true"
+                            alt="空中瑜珈圖片">
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h2 class="text-secondary fs-3 text-nowrap">本月限定課程 - 空中瑜珈</h2>
+                    <div class="d-flex align-items-center text-white mb-6">
+                        <p class="me-2 text-primary">授課老師：Carol Tang</p>
+                        <p class="bg-secondary border-radius-lg py-1 px-6">60 min</p>
+                    </div>
+                    <p class="text-secondary mb-6 text-nowrap">使用掛布懸掛在半空，進行哈達瑜珈體位法練習<br>
+                        藉由地心引力的重力原理<br>
+                        鍛鍊核心肌群，舒緩脊椎壓力<br>
+                        訓練身體協調性，深層放鬆身體<br>
+                        課堂裡老師會視同學狀況安排教導倒立動作<br>
+                        對於不敢嘗試倒立的同學來說<br>
+                        藉由掛布的支持與保護<br>
+                        加上老師細心指導，讓同學能更快掌握
+                    </p>
+                    <a href="#" class="btn btn-primary text-white border-radius-m py-2 px-6">立即預約</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- 搜尋課程 -->
+    <section class="bg-primary py-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 col-md-5">
+                    <div class="input-group me-2">
+                        <input type="text" class="form-control border-radius-sm" placeholder="輸入要搜尋的課程"
+                            aria-label="coursesearch" aria-describedby="button-addon2">
+                        <button class="btn btn-secondary text-white border-radius-sm" type="button"
+                            id="search">搜尋</button>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>全部課程</option>
+                        <option value="1">基礎 Basic</option>
+                        <option value="2">艾揚格 Iyengar</option>
+                        <option value="3">哈達 Hatha</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- 課程列表 -->
+    <section class="border-bottom py-11">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <ul class="row ">
+                        <li class="col-md-6 col-lg-7 mb-12">
+                            <div class="card bg-dark text-white position-relative h-100">
+                                <div class="ratio ratio-16x9">
+                                    <img class="card-img "
+                                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20doing%20yoga%20beside%20wall.jpg?raw=trueg"
+                                        alt="課程1">
+                                </div>
+                                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                    <h3 class="card-title fs-3 fw-medium mb-1">基礎 Basic</h3>
+                                    <p class="card-text fw-regular">授課老師：Carol Tang</p>
+                                </div>
+                                <p
+                                    class="text-white bg-primary border-radius-lg py-1 px-6 position-absolute start-0 top-0 translate-middle-y ms-8">
+                                    60 min</p>
+                                <a href="#modal-basic" class="stretched-link" data-bs-toggle="modal"
+                                    data-bs-target="#modal-basic"></a>
+                            </div>
+
+                        </li>
+                        <li class="col-md-6 col-lg-5 mb-12">
+                            <div class="card bg-dark text-white position-relative h-100">
+                                <div class="ratio ratio-3x2">
+                                    <img class="card-img "
+                                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/rawan-yasser-zQ1ypq-WHzQ-unsplash.jpg?raw=true"
+                                        alt="課程2">
+                                </div>
+                                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                    <h3 class="card-title fs-3 fw-medium mb-1">艾揚格 Iyengar</h3>
+                                    <p class="card-text fw-regular">授課老師：Kanae</p>
+                                </div>
+                                <p
+                                    class="text-white bg-primary border-radius-lg py-1 px-6 position-absolute start-0 top-0 translate-middle-y ms-8">
+                                    60 min</p>
+                            </div>
+                        </li>
+                        <li class="col-md-6 col-lg-5 mb-12">
+                            <div class="card bg-dark text-white position-relative h-100">
+                                <div class="ratio ratio-3x2">
+                                    <img class="card-img "
+                                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20black%20leggings%20doing%20yoga.jpg?raw=true"
+                                        alt="課程3">
+                                </div>
+                                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                    <h3 class="card-title fs-3 fw-medium mb-1">哈達 Hatha</h3>
+                                    <p class="card-text fw-regular">授課老師：Kuzuha</p>
+                                </div>
+                                <p
+                                    class="text-white bg-primary border-radius-lg py-1 px-6 position-absolute start-0 top-0 translate-middle-y ms-8">
+                                    60 min</p>
+                            </div>
+                        </li>
+                        <li class="col-md-6 col-lg-7 mb-12">
+                            <div class="card bg-dark text-white position-relative h-100">
+                                <div class="ratio ratio-16x9">
+                                    <img class="card-img "
+                                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true"
+                                        alt="課程4">
+                                </div>
+                                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                    <h3 class="card-title fs-3 fw-medium mb-1">寰宇 Universal</h3>
+                                    <p class="card-text fw-regular">授課老師：Kuzuha</p>
+                                </div>
+                                <p
+                                    class="text-white bg-primary border-radius-lg py-1 px-6 position-absolute start-0 top-0 translate-middle-y ms-8">
+                                    60 min</p>
+                            </div>
+                        </li>
+                        <li class="col-md-6 col-lg-7 mb-12">
+                            <div class="card bg-dark text-white position-relative h-100">
+                                <div class="ratio ratio-16x9">
+                                    <img class="card-img "
+                                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/two%20woman%20dong%20fitness%20exercise.jpg?raw=true"
+                                        alt="課程5">
+                                </div>
+                                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                    <h3 class="card-title fs-3 fw-medium mb-1">雙人飛行 Arco Yoga</h3>
+                                    <p class="card-text fw-regular">授課老師：Kuzuha、Kanae</p>
+                                </div>
+                                <p
+                                    class="text-white bg-primary border-radius-lg py-1 px-6 position-absolute start-0 top-0 translate-middle-y ms-8">
+                                    60 min</p>
+                            </div>
+                        </li>
+                        <li class="col-md-6 col-lg-5 mb-12">
+                            <div class="card bg-dark text-white position-relative h-100">
+                                <div class="ratio ratio-3x2">
+                                    <img class="card-img h-100"
+                                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20doing%20yoga.jpg?raw=true"
+                                        alt="課程6">
+                                </div>
+                                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                    <h3 class="card-title fs-3 fw-medium mb-1">阿斯坦加 Ashtanga</h3>
+                                    <p class="card-text fw-regular">授課老師：Kanae</p>
+                                </div>
+                                <p
+                                    class="text-white bg-primary border-radius-lg py-1 px-6 position-absolute start-0 top-0 translate-middle-y ms-8">
+                                    60 min</p>
+                            </div>
+                        </li>
+                        <li class="col-md-6 col-lg-5 mb-12">
+                            <div class="card bg-dark text-white position-relative h-100">
+                                <div class="ratio ratio-16x9">
+                                    <img class="card-img"
+                                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20pants%20bending%20her%20body%20by%20the%20window.jpg?raw=true"
+                                        alt="課程7">
+                                </div>
+                                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                    <h3 class="card-title fs-3 fw-medium mb-1">陰陽 Yin Yang</h3>
+                                    <p class="card-text fw-regular">授課老師：Asa Chen</p>
+                                </div>
+                                <p
+                                    class="text-white bg-primary border-radius-lg py-1 px-6 position-absolute start-0 top-0 translate-middle-y ms-8">
+                                    60 min</p>
+                            </div>
+                        </li>
+                        <li class="col-md-6 col-lg-7 mb-12">
+                            <div class="card bg-dark text-white position-relative h-100">
+                                <div class="ratio ratio-3x2">
+                                    <img class="card-img "
+                                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/carl-barcelo-nqUHQkuVj3c-unsplash.jpg?raw=true"
+                                        alt="課程8">
+                                </div>
+                                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                    <h3 class="card-title fs-3 fw-medium mb-1">香氛 Aroma Yoga</h3>
+                                    <p class="card-text fw-regular">授課老師：Asa Chen</p>
+                                </div>
+                                <p
+                                    class="text-white bg-primary border-radius-lg py-1 px-6 position-absolute start-0 top-0 translate-middle-y ms-8">
+                                    60 min</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- 上課須知 -->
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="text-secondary fs-5 text-nowrap fw-regular mb-2">DOYOGA 上課須知：</h2>
+                        <ul class="text-secondary">
+                            <li class="mb-1">請攜帶適當的瑜珈墊和一條長毛巾配合課程使用。</li>
+                            <li class="mb-1">運動中請穿著有彈性、吸汗、透氣為原則的衣物，盡量穿著較貼身的運動衣，以便教練指導與自我矯正。</li>
+                            <li class="mb-1">運動中切記補充適當的水分、保持腹式呼吸，以鼻吸氣，以口呼氣為原則。</li>
+                            <li class="mb-1">運動中請保持微收小腹的原則，肩膀放鬆、頭頂向上延伸，請跟隨教練指示，配合呼吸一步步的確實練習。</li>
+                            <li class="mb-1">運動過程中若感到任何不適，請馬上停止且與老師商量討論。 若懷孕或特殊疾病請先告知。</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 基礎課程modal -->
+    <div class="modal fade" id="modal-basic" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content bg-primary border-0">
+                <div class="modal-body py-10 py-md-18 px-md-16">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 mb-2 mb-md-0 px-19 px-md-0">
+                                <div class="ratio ratio-1x1 ">
+                                    <img class="border-radius-lg"
+                                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1540206276207-3af25c08abc4.jpeg?raw=true"
+                                        alt="空中瑜珈圖片">
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <h2 class="text-white fs-3 fw-regular">基礎 Basic</h2>
+                                <div class="d-flex align-items-center text-white mb-6">
+                                    <p class="me-2 text-white">授課老師：Carol Tang</p>
+                                    <p class="bg-secondary border-radius-lg py-1 px-6">60 min</p>
+                                </div>
+                                <p class="text-white fw-regular mb-6 ">使用掛布懸掛在半空，進行哈達瑜珈體位法練習<br>
+                                    藉由地心引力的重力原理<br>
+                                    鍛鍊核心肌群，舒緩脊椎壓力<br>
+                                    訓練身體協調性，深層放鬆身體<br>
+                                    課堂裡老師會視同學狀況安排教導倒立動作<br>
+                                    對於不敢嘗試倒立的同學來說<br>
+                                    藉由掛布的支持與保護<br>
+                                    加上老師細心指導，讓同學能更快掌握
+                                </p>
+                                <a href="Reservation.html"
+                                    class="btn btn-light text-secondary border-radius-m py-2 px-6">立即預約</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 師資介紹 -->
+    <section class="py-12">
+        <div class="container">
+            <h2 class="text-secondary fs-3 text-center mb-19">師資介紹</h2>
+            <div class="swiper teacherswiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide teacherslide">
+                        <div class="card bg-primary text-white border-radius-lg pt-16 px-8 position-relative h-100">
+                            <img class="img-96 border-secondary-4 position-absolute top-0 start-50 translate-middle rounded-circle"
+                                src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-1.png?raw=true"
+                                alt="老師照片1">
+                            <h5 class="text-center mb-1">
+                                Carol Tang 老師
+                            </h5>
+                            <p class="text-center">教學經歷 10 年</p>
+                            <div class="card-body ">
+                                <p class="mb-6">“因為瑜珈讓我重新認識自己的身體，也讓我有了不一樣的人生。 我希望能跟學生們分享瑜珈的好，讓大 家能藉由瑜珈看見自己的內在與潛能，
+                                    並將瑜珈自然的融入自己的生活中。”</p>
+                                <ul class="text-nowrap">
+                                    <li class="mb-2">・協會認證艾揚格瑜珈老師</li>
+                                    <li class="mb-2">・2010 年完成四年的艾揚格師資培訓</li>
+                                    <li class="mb-2">・2020 取得艾揚格瑜珈高階認證</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="card bg-secondary text-white border-radius-lg pt-16 px-8 position-relative h-100">
+                            <img class="img-96 border-primary-4 position-absolute top-0 start-50 translate-middle rounded-circle"
+                                src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-2.png?raw=true"
+                                alt="老師照片2">
+                            <h5 class="text-center mb-1">
+                                Kanae 老師
+                            </h5>
+                            <p class="text-center">教學經歷 3 年 年</p>
+                            <div class="card-body ">
+                                <p class="mb-6">
+                                    “希望每個人透過觀察，感受在在進入動作，連接陰與陽，內和外，呼和吸的方式來更了解瑜珈練習的觀點，每個​動作都帶著呼吸和順位，在平衡心理和生理的狀況下以安全和簡化的技巧進入瑜珈姿勢，帶著放鬆的心情，享受瑜珈和生命的喜悅，並樂在其​中。”
+                                </p>
+                                <ul class="text-nowrap">
+                                    <li class="mb-2">・美國瑜珈聯盟 RYT200 小時師資認證</li>
+                                    <li class="mb-2">・自然呼吸瑜珈會館開授倒立研習</li>
+                                    <li class="mb-2">・簡善琳瑜珈會館開授倒立研習</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide ">
+                        <div class="card bg-primary text-white border-radius-lg pt-16 px-8 position-relative h-100">
+                            <img class="img-96 border-secondary-4 position-absolute top-0 start-50 translate-middle rounded-circle"
+                                src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-4.png?raw=true"
+                                alt="老師照片3">
+                            <h5 class="text-center mb-1">
+                                Kuzuha 老師
+                            </h5>
+                            <p class="text-center">教學經歷 3 年</p>
+                            <div class="card-body ">
+                                <p class="mb-6">“瑜珈是一種生活態度， 學習平衡不強求，堅持不放棄， 修煉心靈活在當下。”</p>
+                                <ul class="text-nowrap">
+                                    <li class="mb-2">・美國瑜珈聯盟 RYT200 小時師資認證</li>
+                                    <li class="mb-2">・自然呼吸瑜珈會館開授倒立研習</li>
+                                    <li class="mb-2">・簡善琳瑜珈會館開授倒立研習</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide ">
+                        <div class="card bg-secondary text-white border-radius-lg pt-16 px-8 position-relative h-100">
+                            <img class="img-96 border-primary-4 position-absolute top-0 start-50 translate-middle rounded-circle"
+                                src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-3.png?raw=true"
+                                alt="老師照片4">
+                            <h5 class="text-center mb-1">
+                                Asa Ifrit 老師
+                            </h5>
+                            <p class="text-center">教學經歷 5 年</p>
+                            <div class="card-body ">
+                                <p class="mb-6">“帶著懵懂和好奇開始了瑜珈的探索。 追隨印度瑜珈大師 Atui Shri 學習呼吸控制和冥想以及完成瑜珈大師宋光明師資培訓。”</p>
+                                <ul class="text-nowrap">
+                                    <li class="mb-2">・美國瑜珈聯盟 RYT200 小時師資認證</li>
+                                    <li class="mb-2">・AshtangsTTC50小時認證</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</main>

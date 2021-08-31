@@ -1,0 +1,41 @@
+//  卷軸樣式 
+
+ /* width */
+ ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $primary;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $secondary;
+  }
+//   隱藏滾動條
+.scroll-hide{
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.progress-active{
+  background-color: $secondary !important;
+  color: white !important;
+}
+
+//留言框
+textarea {
+  border-color: $primary;
+  outline: 0;
+}
+  
+
+

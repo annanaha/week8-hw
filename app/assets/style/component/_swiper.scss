@@ -1,31 +1,19 @@
 
-// 首頁精心課程
-@media (max-width: 992px) {
-  .swiper-slide  {
-    width: 48% !important;
-  }
-}
-
 .swiper {
   width: 100%;
   height: 100%;
   flex-wrap: nowrap !important;  
+  overflow:hidden;
+}
+
+.swiper-slide{
+  height:auto;
 }
 
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+//師資介紹
 
-// 預約課程階級選擇
-@media (max-width: 768px) {
 
-  .courselevelslide{
-    width: 100% !important;
-  }
-}
+
 
 

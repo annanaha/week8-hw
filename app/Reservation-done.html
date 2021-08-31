@@ -1,0 +1,71 @@
+---
+title: 完成預約
+layout: ./app/layout.ejs
+engine: ejs
+current: reservation-done
+---
+
+
+<main class="py-15">
+    <section>
+        <div class="container">
+            <h2 class="text-secondary fs-3 text-center mb-6">立即預約</h2>
+            <ul class="row justify-content-center mb-10">
+                <li class="col col-md-2 text-center bg-light text-secondary border-radius-lg py-4 px-4 px-lg-13 mx-6">
+                    選擇方案</li>
+                <li class="col col-md-2 text-center bg-light text-secondary border-radius-lg py-4 px-4 px-lg-13 mx-6">
+                    填寫資料</li>
+                <li
+                    class="col col-md-2 text-center bg-light text-secondary border-radius-lg py-4 px-4 px-lg-13 mx-6 progress-active">
+                    完成預約</li>
+            </ul>
+            <div class="d-flex flex-column align-items-center mb-11">
+                <span class="material-icons-outlined iconsize-40 text-secondary mb-7">
+                    check_circle
+                </span>
+                <h5 class="text-secondary fw-regular">已完成預約，以下是您的預約資訊:</h5>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card border-secondary border-radius-sm">
+                        <div class="d-flex justify-content-between bg-secondary text-white py-6 px-7">
+                            預約資訊
+                            <span class="material-icons-outlined ">
+                                expand_more
+                            </span>
+                        </div>
+                        <div class="card-body text-secondary py-6 px-7">
+                            <div class="d-flex mb-6">
+                                <h5 class="text-primary fw-regular"><span
+                                        class="text-dark fs-6 me-6">您選擇的是</span>首次體驗課程-基礎</h5>
+                            </div>
+                            <ul>
+                                <li class="mb-2">上課預約報到日：2021/07/21</li>
+                                <li class="mb-2">預約人：Joanne Chen</li>
+                                <li class="mb-2">年齡：18 歲</li>
+                                <li class="mb-2">性別：女</li>
+                                <li class="mb-2">電子信箱：example123@gmail.com</li>
+                                <li class="mb-2">手機號碼：0912-345-678</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 上課注意事項 -->
+    <section class="py-10">
+        <div class="container ">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <h2 class="text-secondary fs-3 text-center mb-6">上課注意事項</h2>
+                    <p class="text-secondary mb-10">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。<br>
+                        如欲更改體驗時間請提前通知我們喔！ </p>
+                    <a href="index.html" class="btn btn-primary text-white border-radius-m w-100">返回首頁</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
