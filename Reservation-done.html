@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    完成預約
+  </title>
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'hsz1rbb',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/bootstrap.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <div class="header bg-light py-7">
+    <div class="container ">
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="index.html"><img class="logo-img"
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/DOYOGA-logo.png?raw=true"
+            alt="logo"></a>
+        <ul class="nav d-none d-lg-flex">
+          <li class="nav-item">
+            <a class="nav-link" href="course.html">課程介紹</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="surroundings.html">瑜珈空間</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="curriculum.html">當月課表</a>
+          </li>
+        </ul>
+        <!-- 漢堡checkbox隱藏 -->
+        <input type="checkbox" id="ham-btn" class="d-none">
+        <!-- 漢堡 -->
+        <label for="ham-btn" class="ham-btn d-lg-none" data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+        </label>
+        <!-- 按鈕 -->
+        <ul class="nav d-none d-lg-flex">
+          <li class="nav-item me-6">
+            <a class="btn btn-outline-secondary" href="Reservation.html">立即預約</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-secondary" href="contactus.html">聯絡我們</a>
+          </li>
+        </ul>
+      </div>
+      <!-- 手機板選單 -->
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="text-center">
+          <ul class="d-lg-none mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="course.html">課程介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="surroundings.html">瑜珈空間</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="curriculum.html">當月課表</a>
+            </li>
+          </ul>
+          <ul class="d-lg-none">
+            <li class="nav-item mb-6">
+              <a class="btn btn-outline-secondary" href="Reservation.html">立即預約</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-secondary" href="contactus.html">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 手機板選單 -->
+    </div>
+    <!-- container -->
+
+  </div>
+  <!-- header -->
+
+
+  
+
+<main class="py-15">
+    <section>
+        <div class="container">
+            <h2 class="text-secondary fs-3 text-center mb-6">立即預約</h2>
+            <ul class="row justify-content-center mb-10">
+                <li class="col col-md-2 text-center bg-light text-secondary border-radius-lg py-4 px-4 px-lg-13 mx-6">
+                    選擇方案</li>
+                <li class="col col-md-2 text-center bg-light text-secondary border-radius-lg py-4 px-4 px-lg-13 mx-6">
+                    填寫資料</li>
+                <li
+                    class="col col-md-2 text-center bg-light text-secondary border-radius-lg py-4 px-4 px-lg-13 mx-6 progress-active">
+                    完成預約</li>
+            </ul>
+            <div class="d-flex flex-column align-items-center mb-11">
+                <span class="material-icons-outlined iconsize-40 text-secondary mb-7">
+                    check_circle
+                </span>
+                <h5 class="text-secondary fw-regular">已完成預約，以下是您的預約資訊:</h5>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card border-secondary border-radius-sm">
+                        <div class="d-flex justify-content-between bg-secondary text-white py-6 px-7">
+                            預約資訊
+                            <span class="material-icons-outlined ">
+                                expand_more
+                            </span>
+                        </div>
+                        <div class="card-body text-secondary py-6 px-7">
+                            <div class="d-flex mb-6">
+                                <h5 class="text-primary fw-regular"><span
+                                        class="text-dark fs-6 me-6">您選擇的是</span>首次體驗課程-基礎</h5>
+                            </div>
+                            <ul>
+                                <li class="mb-2">上課預約報到日：2021/07/21</li>
+                                <li class="mb-2">預約人：Joanne Chen</li>
+                                <li class="mb-2">年齡：18 歲</li>
+                                <li class="mb-2">性別：女</li>
+                                <li class="mb-2">電子信箱：example123@gmail.com</li>
+                                <li class="mb-2">手機號碼：0912-345-678</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 上課注意事項 -->
+    <section class="py-10">
+        <div class="container ">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <h2 class="text-secondary fs-3 text-center mb-6">上課注意事項</h2>
+                    <p class="text-secondary mb-10">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。<br>
+                        如欲更改體驗時間請提前通知我們喔！ </p>
+                    <a href="index.html" class="btn btn-primary text-white border-radius-m w-100">返回首頁</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+    <!-- 頁尾 -->
+    <footer class="bg-secondary">
+      <div class=" border-bottom-w py-10">
+        <div class="container d-flex flex-column flex-lg-row justify-content-between">
+          <h2 class="text-white fs-3 mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</h2>
+          <div class="col-md-4">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control border-radius-sm" placeholder="輸入您的電子信箱"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-primary text-white border-radius-sm" type="button" id="button-addon2">訂閱</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row py-10">
+          <div class="col-md-4">
+            <div class="d-flex justify-content-between">
+              <a href="#"><img class="logo-img"
+                  src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/DOYOGA.png?raw=true"
+                  alt="logo白"></a>
+              <ul class="d-flex justify-content-end d-md-none">
+                <li class="me-2"><a href="#"><i class="fab fa-facebook fs-4 text-white"></i></a></li>
+                <li class="me-2"><a href="#"><i class="fab fa-instagram fs-4 text-white"></i></a></li>
+                <li><a href="#"><i class="fab fa-line fs-4 text-white"></i></a></li>
+              </ul>
+            </div>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link text-white ps-0" href="course.html">課程介紹</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white ps-0" href="surroundings.html">瑜珈空間</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white ps-0" href="curriculum.html">當月課表</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 d-flex flex-column justify-content-end">
+            <p class="card-text text-white">© 2021. All Rights Reserved.</p>
+          </div>
+          <!-- 平板社群連結 -->
+          <div class="col-md-4 d-none d-md-block">
+            <ul class="d-flex justify-content-end">
+              <li class="me-2"><a href="#"><i class="fab fa-facebook fs-4 text-white"></i></a></li>
+              <li class="me-2"><a href="#"><i class="fab fa-instagram fs-4 text-white"></i></a></li>
+              <li><a href="#"><i class="fab fa-line fs-4 text-white"></i></a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- 社群連結固定右邊 -->
+    <ul class="position-fixed top-50 end-0 translate-middle " style="z-index: 1090;">
+      <li class="mb-2">
+        <a href="#"><i class="fab fa-facebook fa-2x text-secondary"></i></a>
+      </li>
+      <li class="mb-2">
+        <a href="#"><i class="fab fa-instagram fa-2x text-secondary"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-line fa-2x text-secondary"></i></a>
+      </li>
+    </ul>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
