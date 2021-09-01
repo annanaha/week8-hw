@@ -96,12 +96,13 @@ var teacherswiper = new Swiper(".teacherswiper", {
 }); //課程推薦
 
 var recommendswiper = new Swiper(".recommendswiper", {
+  slidesPerView: 1.5,
+  grid: {
+    rows: 1,
+    fill: 'row'
+  },
+  spaceBetween: 30,
   breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1.5,
-      spaceBetween: 20
-    },
     // when window width is >= 480px
     768: {
       slidesPerView: 3,

@@ -208,10 +208,10 @@
                             </div>
                         </li>
                         <li class="mb-10">
-                            <label class="mb-2" for="date">4. 上課預約報到日</label>
+                            <label class="mb-2" for="datepicker">4. 上課預約報到日</label>
                             <p class="mb-2"><small>若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</small></p>
                             <input class="form-control date-input" type="text" placeholder="MM/DD/YYYY"
-                                aria-label="example">
+                                aria-label="example" id="datepicker" name="date">
                         </li>
                         <li class="mb-10">
                             <label class="mb-6" for="">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</label>
@@ -285,14 +285,14 @@
               </ul>
             </div>
             <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link text-white ps-0" href="course.html">課程介紹</a>
+              <li class="nav-item mb-2">
+                <a class=" text-white ps-0" href="course.html">課程介紹</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white ps-0" href="surroundings.html">瑜珈空間</a>
+              <li class="nav-item mb-2">
+                <a class=" text-white ps-0" href="surroundings.html">瑜珈空間</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white ps-0" href="curriculum.html">當月課表</a>
+              <li class="nav-item mb-2">
+                <a class=" text-white ps-0" href="curriculum.html">當月課表</a>
               </li>
             </ul>
           </div>
@@ -326,6 +326,7 @@
       </li>
     </ul>
 
+    <!-- js -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
