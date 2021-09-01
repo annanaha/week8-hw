@@ -17066,6 +17066,10 @@ fieldset:disabled .btn {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 body ol, body ul {
   list-style: none;
   padding-left: 0;
@@ -17148,15 +17152,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p {
 .img-96 {
   width: 96px;
   height: 96px;
-}
-
-@media (min-width: 768px) {
-  .banner h1, .banner .h1 {
-    font-size: 36px;
-  }
-  .banner h2, .banner .h2 {
-    font-size: 24px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -17271,13 +17266,19 @@ textarea {
   outline: 0;
 }
 
+@media (max-width: 768px) {
+  .ratio-16x9 {
+    --bs-aspect-ratio: 100%;
+  }
+}
+
 .nav-link {
   color: #707070;
 }
 
 @media (max-width: 992px) {
   .nav-link {
-    padding: 16px 16px;
+    padding: 24px 16px;
   }
 }
 
@@ -17347,6 +17348,10 @@ textarea {
 
 .swiper-slide {
   height: auto;
+}
+
+.teacherswiper {
+  overflow: visible;
 }
 
 .form-check-input {

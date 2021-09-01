@@ -20,7 +20,8 @@
   </script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="./assets/style/bootstrap.css">
   <link rel="stylesheet" href="./assets/style/all.css">
@@ -64,7 +65,7 @@
       <!-- 手機板選單 -->
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="text-center">
-          <ul class="d-lg-none mb-2">
+          <ul class="d-lg-none ">
             <li class="nav-item">
               <a class="nav-link" href="course.html">課程介紹</a>
             </li>
@@ -76,7 +77,7 @@
             </li>
           </ul>
           <ul class="d-lg-none">
-            <li class="nav-item mb-6">
+            <li class="nav-item mt-8 mb-8">
               <a class="btn btn-outline-secondary" href="Reservation.html">立即預約</a>
             </li>
             <li class="nav-item">
@@ -309,7 +310,7 @@
     <!-- 基礎課程modal -->
     <div class="modal fade" id="modal-basic" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered ">
-            <div class="modal-content bg-primary border-0">
+            <div class="modal-content bg-primary border-0 border-radius-lg">
                 <div class="modal-body py-10 py-md-18 px-md-16">
                     <div class="container">
                         <div class="row align-items-center">
@@ -357,7 +358,7 @@
             <h2 class="text-secondary fs-3 text-center mb-19">師資介紹</h2>
             <div class="swiper teacherswiper">
                 <ul class="swiper-wrapper">
-                    <li class="swiper-slide teacherslide">
+                    <li class="swiper-slide ">
                         <div class="card bg-primary text-white border-radius-lg pt-16 px-8 position-relative h-100">
                             <img class="img-96 border-secondary-4 position-absolute top-0 start-50 translate-middle rounded-circle"
                                 src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-1.png?raw=true"
@@ -377,7 +378,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="swiper-slide">
+                    <li class="swiper-slide ">
                         <div class="card bg-secondary text-white border-radius-lg pt-16 px-8 position-relative h-100">
                             <img class="img-96 border-primary-4 position-absolute top-0 start-50 translate-middle rounded-circle"
                                 src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-2.png?raw=true"
@@ -398,7 +399,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="swiper-slide ">
+                    <li class="swiper-slide  ">
                         <div class="card bg-primary text-white border-radius-lg pt-16 px-8 position-relative h-100">
                             <img class="img-96 border-secondary-4 position-absolute top-0 start-50 translate-middle rounded-circle"
                                 src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-4.png?raw=true"
@@ -417,7 +418,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="swiper-slide ">
+                    <li class="swiper-slide  ">
                         <div class="card bg-secondary text-white border-radius-lg pt-16 px-8 position-relative h-100">
                             <img class="img-96 border-primary-4 position-absolute top-0 start-50 translate-middle rounded-circle"
                                 src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-3.png?raw=true"
@@ -512,8 +513,11 @@
       </li>
     </ul>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
 </body>
