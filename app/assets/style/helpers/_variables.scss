@@ -363,6 +363,7 @@ $grid-gutter-width:           1.875rem !default; //1.5
 $grid-row-columns:            6 !default;
 
 $gutters: $spacers !default;
+$g-30:  1.875rem !default;//new
 
 // Container padding
 
@@ -424,6 +425,7 @@ $aspect-ratios: (
   "21x9": calc(9 / 21 * 100%),
   "2x1": calc(1 / 2 * 100%),//new
   "3x2": calc(2 / 3 * 100%)//new
+  "1x2": calc(2 / 1 * 100%)//new
 ) !default;
 // scss-docs-end aspect-ratios
 // stylelint-enable function-disallowed-list

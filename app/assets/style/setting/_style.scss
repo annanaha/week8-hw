@@ -36,6 +36,12 @@ textarea {
   border-color: $primary;
   outline: 0;
 }
+
+.ratio-16x9 {
+  @media(max-width:768px){
+    --bs-aspect-ratio: 100%; // 2x1
+  }
+}
   
 
 
