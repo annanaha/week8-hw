@@ -17076,6 +17076,10 @@ body ol, body ul {
   margin-bottom: 0;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 a {
   color: #000;
   text-decoration: none;
@@ -17352,6 +17356,28 @@ textarea {
 
 .teacherswiper {
   overflow: visible;
+}
+
+.datepicker-dropdown .datepicker-picker {
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+}
+
+.datepicker-picker {
+  border: 1px solid #C0A4A5;
+}
+
+.datepicker, .datepicker-header .datepicker-controls .button {
+  color: #907A7B;
+}
+
+.datepicker-cell.focused:not(.selected) {
+  background-color: #907A7B;
+  color: #fff;
+}
+
+.datepicker-cell.next:not(.disabled), .datepicker-cell.prev:not(.disabled) {
+  color: #C0A4A5;
 }
 
 /*# sourceMappingURL=all.css.map */

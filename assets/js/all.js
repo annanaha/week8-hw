@@ -115,4 +115,8 @@ var recommendswiper = new Swiper(".recommendswiper", {
     }
   }
 });
+var elem = document.querySelector('input[name="datepicker"]');
+var datepicker = new Datepicker(elem, {
+  autohide: true
+});
 //# sourceMappingURL=all.js.map
